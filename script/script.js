@@ -20,6 +20,17 @@ function selectedPlayerList(inputId, value){
     }
 }
 
+function getValueofInputField(inputId){
+    const input = document.getElementById(inputId);
+    const inputString = input.value;
+    const inputAmount = parseFloat(inputString);
+}
+
+function setValuetoInputField(inputID, value){
+    const inputField = document.getElementById(inputID);
+    inputField.value = value;
+}
+
 document.getElementById('select-messi').addEventListener('click', function(){
     const messi = getPlayersNameById('messi');
     console.log(messi);
@@ -49,4 +60,26 @@ document.getElementById('select-julian').addEventListener('click', function(){
     const julian = getPlayersNameById('julian');
     console.log(julian);
     selectedPlayerList('players-container', julian);
+})
+document.getElementById('select-marco').addEventListener('click', function(){
+    const marco = getPlayersNameById('marco');
+    console.log(marco);
+    selectedPlayerList('players-container', marco);
+})
+document.getElementById('select-ramos').addEventListener('click', function(){
+    const ramos = getPlayersNameById('ramos');
+    console.log(ramos);
+    selectedPlayerList('players-container', ramos);
+})
+document.getElementById('select-marq').addEventListener('click', function(){
+    const marq = getPlayersNameById('marq');
+    console.log(marq);
+    selectedPlayerList('players-container', marq);
+})
+
+document.getElementById('calculate').addEventListener('click', function(){
+    const allList = document.querySelectorAll('li');
+    const listLength = allList.length;
+    const listLengthAmount = parseFloat(listLength);
+    console.log(listLengthAmount);
 })

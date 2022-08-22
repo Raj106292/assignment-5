@@ -122,12 +122,12 @@
                             <div class="card">
                                 <img src="players/marco-verratti.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title text-center">Marco Verratti</h5>
+                                  <h5 id="marco" class="card-title text-center">Marco Verratti</h5>
                                   <p class="card-text text-muted text-center">
                                     Goals: 18 || Assist: 88
                                   </p>
                                   <div class="text-center">
-                                    <button class="btn btn-primary px-5">Select</button>
+                                    <button id="select-marco" class="btn btn-primary px-5">Select</button>
                                   </div>
                                 </div>
                               </div>
@@ -136,12 +136,12 @@
                             <div class="card">
                                 <img src="players/16507482554190.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title text-center">Sergio Ramos</h5>
+                                  <h5 id="ramos" class="card-title text-center">Sergio Ramos</h5>
                                   <p class="card-text text-muted text-center">
                                     Goals: 18 || Assist: 84
                                   </p>
                                   <div class="text-center">
-                                    <button class="btn btn-primary px-5">Select</button>
+                                    <button id="select-ramos" class="btn btn-primary px-5">Select</button>
                                   </div>
                                 </div>
                               </div>
@@ -150,12 +150,12 @@
                             <div class="card">
                                 <img src="players/marquinhos-psg-2019-20_hjcfh6ku46y51cgior0f1y7bl.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title text-center">Marquinhos</h5>
+                                  <h5 id="marq" class="card-title text-center">Marquinhos</h5>
                                   <p class="card-text text-muted text-center">
                                     Goals: 26 || Assist: 98
                                   </p>
                                   <div class="text-center">
-                                    <button class="btn btn-primary px-5">Select</button>
+                                    <button id="select-marq" class="btn btn-primary px-5">Select</button>
                                   </div>
                                 </div>
                               </div>
@@ -176,9 +176,17 @@
                             <div class="card">
                                 <div class="card-body">
                                   <h5 class="card-title text-center">Budget</h5>
-                                  <p class="card-text"></p>
-                                  <a href="#" class="btn btn-primary">Button</a>
-                                </div>
+                                  <div class="row">
+                                    <div class="col-6">
+                                        Per Player:
+                                    </div>
+                                    <div class="col-2">
+                                        <input id="per-player-cost" type="text">
+                                    </div>
+                                  </div>
+                                  <div class="text-center mt-2">
+                                    <button id="calculate" class="btn btn-primary px-3">Calculate</button>
+                                  </div>
                               </div>
                         </div>
                     </div>
@@ -191,4 +199,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>
+</html>id
