@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+#heading {
+    font-family: 'Pacifico', cursive;
+    color: #FF5E19;
+}
+
+#first{
+    position: absolute;
+    left: -140px;
+    height: 250px;
+    top: 50px
+}
+#second{
+    position: absolute;
+    right: -5px;
+    height: 250px;
+    top: 50px
+}
