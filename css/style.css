@@ -23,6 +23,6 @@ main img{
     height: 180px;
 }
 
-#per-player-cost{
-    width: 500%;
+.cost{
+    width: 100%;
 }
