@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
 
+body{
+    max-width: 1100px;
+    margin: auto;
+}
 #heading {
     font-family: 'Pacifico', cursive;
     color: #FF5E19;

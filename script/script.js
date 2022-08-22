@@ -121,7 +121,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const manager = document.getElementById('manager-cost');
     const managerString = manager.value;
     const managerAmount = parseFloat(managerString);
-    if(isNaN(managerAmount) === true){
+    if(isNaN(managerString) === true || isNaN(managerAmount) === true){
         alert('Please enter proper amount in Manager field')
         manager.value = '';
         return ;
@@ -130,7 +130,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const coach = document.getElementById('coach-cost');
     const coachString = coach.value;
     const coachAmount = parseFloat(coachString);
-    if(isNaN(coachAmount) === true){
+    if(isNaN(coachString) === true || isNaN(coachAmount) === true){
         alert('Please enter proper amount in Coach field')
         coach.value = '';
         return ;
