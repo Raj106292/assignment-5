@@ -113,14 +113,28 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const expenses = document.getElementById('cost-for-players');
     const expensesString = expenses.innerText;
     const expensesAmount = parseFloat(expensesString);
+    if(isNaN(expensesAmount) === true){
+        alert('Check the selected player list or player per cost');
+        return;
+    }
 
     const manager = document.getElementById('manager-cost');
     const managerString = manager.value;
     const managerAmount = parseFloat(managerString);
+    if(isNaN(managerAmount) === true){
+        alert('Please enter proper amount in Manager field')
+        manager.value = '';
+        return ;
+    }
 
     const coach = document.getElementById('coach-cost');
     const coachString = coach.value;
     const coachAmount = parseFloat(coachString);
+    if(isNaN(coachAmount) === true){
+        alert('Please enter proper amount in Coach field')
+        coach.value = '';
+        return ;
+    }
 
     const totalAmount = expensesAmount + managerAmount + coachAmount;
 
