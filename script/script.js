@@ -26,7 +26,6 @@ function getValueofInputField(inputId) {
     const inputAmount = parseFloat(inputString);
     
     if(isNaN(inputString) === true){
-        input.value = '';
         return;
     }
 
@@ -122,8 +121,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const managerString = manager.value;
     const managerAmount = parseFloat(managerString);
     if(isNaN(managerString) === true || isNaN(managerAmount) === true){
-        alert('Please enter proper amount in Manager field')
-        manager.value = '';
+        alert('Please enter proper amount in Manager field');
         return ;
     }
 
@@ -131,8 +129,7 @@ document.getElementById('calculate-total').addEventListener('click', function ()
     const coachString = coach.value;
     const coachAmount = parseFloat(coachString);
     if(isNaN(coachString) === true || isNaN(coachAmount) === true){
-        alert('Please enter proper amount in Coach field')
-        coach.value = '';
+        alert('Please enter proper amount in Coach field');
         return ;
     }
 
