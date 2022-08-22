@@ -24,6 +24,8 @@ function getValueofInputField(inputId){
     const input = document.getElementById(inputId);
     const inputString = input.value;
     const inputAmount = parseFloat(inputString);
+
+    return inputAmount;
 }
 
 function setValuetoInputField(inputID, value){
@@ -82,4 +84,13 @@ document.getElementById('calculate').addEventListener('click', function(){
     const listLength = allList.length;
     const listLengthAmount = parseFloat(listLength);
     console.log(listLengthAmount);
+
+    const perHeadCost = getValueofInputField('per-player-cost');
+    console.log(perHeadCost);
+
+    const expenses = listLengthAmount*perHeadCost;
+    console.log(expenses);
+
+    const playersCost = document.getElementById('cost-for-players');
+    playersCost.innerText = expenses;
 })
